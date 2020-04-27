@@ -1,0 +1,19 @@
+@import '../../sass/variables.scss';
+
+.mat-fab.mat-primary,
+.mat-flat-button.mat-primary,
+.mat-mini-fab.mat-primary,
+.mat-raised-button.mat-primary {
+  background-color: $orange2;
+  box-shadow: 0px 0xp 8px rgba(0, 0, 0, 0.6);
+}
+
+.cursor {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.size-btn {
+  width: 35px;
+  height: 35px;
+}

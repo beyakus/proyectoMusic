@@ -1,0 +1,142 @@
+@import '../../sass/variables.scss';
+
+header {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: $color2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    $color-background1,
+    $color-background2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    $color-background1,
+    $color-background2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+app-menu {
+  position: fixed;
+  right: 20px;
+  top: 30px;
+  background: $white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+  transform: scale(1);
+  transition: transform 0.5;
+  &:active {
+    transform: scale(0.9);
+  }
+  animation: animateMenu 0.3s 3 alternate;
+  z-index: 20;
+}
+app-repro {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 30;
+  left: 10px;
+  animation: animtationPlayer 0.6s alternate;
+}
+
+.content-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 600px;
+  margin: auto;
+  color: $white;
+  overflow: hidden;
+}
+
+.content-header .title-header {
+  width: 50%;
+  transform: translateY(0);
+  opacity: 1;
+  animation: animationTex 1s ease-out;
+}
+
+.content-header h1 {
+  font-size: 70px;
+}
+
+.content-header span {
+  font-size: 30px;
+}
+
+.content-header figure {
+  width: 50%;
+}
+
+.content-header figure img {
+  width: 100%;
+  transform: translateX(0);
+  opacity: 1;
+  animation: animationImage 1s ease-out;
+}
+
+.wave-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  height: 250px;
+  width: 100%;
+}
+
+@keyframes animateMenu {
+  0% {
+    transform: scale(0.1);
+  }
+}
+
+@keyframes animationTex {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes animationImage {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes animtationPlayer {
+  0% {
+    transform: scale(0.1);
+  }
+}
+
+@media screen and (max-width: $size-md) {
+  header {
+    height: auto;
+  }
+
+  .content-header {
+    flex-wrap: wrap;
+    height: 600px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .content-header .title-header {
+    width: 80%;
+    margin-bottom: 100px;
+  }
+
+  .content-header h1 {
+    font-size: 60px;
+  }
+
+  .content-header span {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,20 @@
+<section class="audio">
+  <article>
+    <audio id="audio"></audio>
+    <button mat-mini-fab color="primary" class="size-btn">
+      <mat-icon class="cursor" (click)="previous()">
+        skip_previous
+      </mat-icon>
+    </button>
+    <button mat-mini-fab color="primary" (click)="music()">
+      <mat-icon>
+        {{ !play ? 'play_circle_outline' : 'pause_circle_outline' }}
+      </mat-icon>
+    </button>
+    <button mat-mini-fab color="primary" class="size-btn">
+      <mat-icon class="cursor" (click)="next()">
+        skip_next
+      </mat-icon>
+    </button>
+  </article>
+</section>

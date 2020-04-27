@@ -1,0 +1,93 @@
+<main class="container">
+  <section>
+    <article class="row">
+      <div class="col-12">
+        <header>
+          <h4>Primeros pasos</h4>
+        </header>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet,
+          odio sagittis auctor porta.
+        </p>
+        <article class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 top-card">
+            <app-card [classCard]="'card-info'">
+              <article class="text-center">
+                <figure class="figure">
+                  <img
+                    src="../../../assets/images/icon1.svg"
+                    class="colorSvg"
+                  />
+                </figure>
+                <header>
+                  <h4>Disfruta</h4>
+                </header>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Praesent tincidunt mollis erat ac vulputate.
+                </p>
+              </article>
+            </app-card>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 top-card">
+            <app-card [classCard]="'card-info'">
+              <article class="text-center">
+                <figure class="figure">
+                  <img src="../../../assets/images/icon2.svg" />
+                </figure>
+                <header>
+                  <h4>Crea</h4>
+                </header>
+                <p>
+                  Donec eu condimentum quam, sed hendrerit libero. Nam venenatis
+                  venenatis elit, quis rutrum mi pretium vel.
+                </p>
+              </article>
+            </app-card>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 top-card">
+            <app-card [classCard]="'card-info'">
+              <article class="text-center">
+                <figure class="figure">
+                  <img src="../../../assets/images/icon3.svg" />
+                </figure>
+                <header>
+                  <h4>Comparte</h4>
+                </header>
+                <p>
+                  Cras vehicula erat eu accumsan vulputate. Cras nec interdum
+                  tellus. Curabitur nunc elit, luctus laoreet lectus mollis,
+                  aliquam auctor.
+                </p>
+              </article>
+            </app-card>
+          </div>
+        </article>
+      </div>
+    </article>
+    <article class="top-details-wrap">
+      <section class="content-details">
+        <article class="content-img">
+          <figure>
+            <img src="../../../assets/images/people.svg" />
+          </figure>
+        </article>
+        <article class="content-text">
+          <header>
+            <h2>Nos gusta compartir esos momentos mágicos</h2>
+          </header>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            tincidunt mollis erat ac vulputate. Ut lacinia tortor orci, a tempor
+            dolor tempus id. Morbi bibendum, ex a efficitur scelerisque, mauris
+            libero venenatis ex, sit amet dignissim neque nibh in nunc. Mauris
+            faucibus, ex luctus dictum iaculis, orci erat imperdiet justo, i
+          </p>
+        </article>
+      </section>
+    </article>
+    <article>
+      <app-maps [url]="addreesMap"></app-maps>
+    </article>
+  </section>
+</main>

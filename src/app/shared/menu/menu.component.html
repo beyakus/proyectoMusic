@@ -1,0 +1,19 @@
+<article>
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    aria-label="Example icon-button with a menu"
+  >
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="registry()">
+      <mat-icon>face</mat-icon>
+      <span>Registrarse</span>
+    </button>
+    <button mat-menu-item (click)="login()">
+      <mat-icon>exit_to_app</mat-icon>
+      <span>iniciar sesión</span>
+    </button>
+  </mat-menu>
+</article>

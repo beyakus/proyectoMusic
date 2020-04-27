@@ -1,0 +1,24 @@
+@import './app/sass/mixin.scss';
+@import './app/sass/variables.scss';
+
+*,
+::after,
+::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.card-info {
+  @include backgroud-gradient($oragen1, $brown1);
+}
+
+button:focus {
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    outline: none;
+    outline: none;
+  }
+}
