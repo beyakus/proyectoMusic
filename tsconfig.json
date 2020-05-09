@@ -17,8 +17,10 @@
       "@interfaces/*": ["src/app/interfaces/*"],
       "@env/*": ["src/environments/*"],
       "@shared/*": ["src/app/shared/*"],
-      "@helpers/*": ["src/app/helpers/*"]
-    }
+      "@helpers/*": ["src/app/helpers/*"],
+      "@config/*": ["src/app/config/*"]
+    },
+    "skipLibCheck": true
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

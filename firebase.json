@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "skimmia",
+      "public": "dist/skimmia",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

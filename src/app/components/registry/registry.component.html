@@ -1,27 +1,40 @@
 <app-card [title]="'Registro'">
-    <ng-container [formGroup]="registryForm">
-        <section>
-            <article class="row top">
-                <div class="col-12">
-                    <input type="text" class="form-control" placeholder="Nombre" formControlName="name">
-                </div>
-            </article>
-            <article class="row top">
-                <div class="col-12">
-                    <input type="text" class="form-control" placeholder="Usuario" formControlName="username">
-                </div>
-            </article>
-            <article class="row top">
-                <div class="col-12">
-                    <input type="password" class="form-control" placeholder="Contraseña" formControlName="password">
-                </div>
-            </article>
-        </section>
-        <article class="row top">
-            <button mat-fab color="primary" aria-label="Example icon button with a delete icon" 
-            [disabled]="!registryForm.valid" matTooltip="Nuevo registro" (click)="registry()">
-                <mat-icon>person_add</mat-icon>
-              </button>
-        </article>
-    </ng-container>
+  <ng-container [formGroup]="registryForm">
+    <section>
+      <article class="row top">
+        <div class="col-12">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Correo"
+            formControlName="email"
+            appValidationForm
+          />
+        </div>
+      </article>
+      <article class="row top">
+        <div class="col-12">
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Contraseña"
+            formControlName="password"
+            appValidationForm
+          />
+        </div>
+      </article>
+    </section>
+    <article class="row top">
+      <button
+        mat-fab
+        color="primary"
+        aria-label="Example icon button with a delete icon"
+        [disabled]="!registryForm.valid"
+        matTooltip="Nuevo registro"
+        (click)="registry()"
+      >
+        <mat-icon>person_add</mat-icon>
+      </button>
+    </article>
+  </ng-container>
 </app-card>

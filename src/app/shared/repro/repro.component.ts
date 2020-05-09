@@ -20,7 +20,7 @@ export class ReproComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.getPlay();
+    // this.getPlay();
   }
 
   private getAudio() {
